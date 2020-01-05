@@ -1,0 +1,12 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">JustJava</string>
+    <string name = "toppings">Toppings</string>
+    <string name = "thank_you">Thank you</string>
+    <string name= "Name">Name</string>
+
+    <!--
+    Name for the order summary. It will be shown in the format of "Name: Amy", where Amy is the name of the user.
+    %s == a string that should not be translated
+    -->
+    <string name = "order_summary_name">Name: <xliff:g id = "name" example="Amy">%s</xliff:g></string>
+</resources>
