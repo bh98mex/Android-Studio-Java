@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Details"
+    tools:showIn="@layout/activity_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="top|center_horizontal"
+        android:text="@string/your_current_address_is"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/adresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text=""
+        android:gravity="top|center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/Header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="top|center_horizontal"
+            android:text="How do you feel?"
+            android:textSize="22sp"
+            android:paddingBottom="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top|center_horizontal"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/happy"
+                android:id="@+id/happy"
+                android:tag="happy"
+                android:layout_margin="3dp"
+               />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calm"
+                android:src="@drawable/calm"
+                android:id="@+id/calm"
+                android:layout_margin="3dp"
+                android:tag="calm"
+
+              />
+           <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silly"
+               android:src="@drawable/silly"
+                android:id="@+id/silly"
+               android:layout_margin="3dp"
+               android:tag="silly"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top|center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relaxed"
+                android:src="@drawable/cool"
+                android:id="@+id/cool"
+                android:layout_margin="3dp"
+                android:tag="cool"
+                />
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nervous"
+                android:id="@+id/nervous"
+                android:layout_margin="3dp"
+                android:tag="nervous"
+            />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/annoyed"
+                android:id="@+id/annoyed"
+                android:layout_margin="3dp"
+                android:tag="annoyed"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top|center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sad"
+                android:id="@+id/sad"
+                android:layout_margin="3dp"
+                android:tag="sad"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shy"
+                android:id="@+id/shy"
+                android:layout_margin="3dp"
+                android:tag="shy"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/surprised"
+                android:id="@+id/surprised"
+                android:layout_margin="3dp"
+android:tag="surprised"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top|center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:src="@drawable/hungry"
+                android:id="@+id/hungry"
+                android:layout_margin="3dp"
+                android:tag="hungry"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/annoyed"
+                android:id="@+id/tired"
+                android:layout_margin="3dp"
+                android:tag="tired"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/confused"
+                android:id="@+id/confused"
+                android:layout_margin="3dp"
+                android:tag="confused"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="top|center_horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:src="@drawable/sleepy"
+                android:id="@+id/sleepy"
+                android:layout_margin="3dp"
+android:tag="sleepy"
+              />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sick"
+                android:id="@+id/sick"
+                android:layout_margin="3dp"
+                android:tag="sick"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hurt"
+                android:id="@+id/hurt"
+                android:layout_margin="3dp"
+                android:tag="hurt"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/black"
+            android:layout_marginBottom="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Text"
+    tools:showIn="@layout/activity_text"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="top|center_horizontal"
+            android:text="Your details..."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/Header"
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/your_current_address_is"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/adresa"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="top|center_horizontal"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@+id/Header" />
+
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/Emotion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:text="You are feeling:"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/savedData"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                android:text=""
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/Emotion" />
+
+            <ImageButton
+                android:id="@+id/feelButton"
+                android:layout_width="89dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                android:contentDescription="TODO" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/Photo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Why are you emotional:"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="26dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/initial_emoji" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/savedPhoto"
+                android:layout_margin="8dp"
+
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/Header2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="top|center_horizontal"
+            android:text="Complete your recording..."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/black"
+            android:layout_marginBottom="8dp"
+            />
+
+        <EditText
+            android:id="@+id/Thoughts"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginBottom="8dp"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:hint="Your thoughts"
+            android:inputType="textMultiLine"
+            android:outlineProvider="bounds" />
+
+        <Button
+
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes to Logs"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:onClick="SubmitChanges"
+            />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+
+

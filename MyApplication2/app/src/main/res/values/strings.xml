@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_details">Details</string>
+    <string name="your_current_address_is">Your current location is:</string>
+    <string name="title_activity_image_and_text">ImageAndText</string>
+    <string name="title_activity_text">Text</string>
+</resources>
