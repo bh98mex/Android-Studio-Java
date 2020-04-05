@@ -1,0 +1,1 @@
+Double initial number in Android Studio
